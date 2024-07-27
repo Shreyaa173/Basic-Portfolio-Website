@@ -1,0 +1,1230 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+}
+/* ---------------------home----------------------------- */
+body{
+    min-height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    color: #fff;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    background: #172737;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(Assests/me.png);
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.25rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+
+nav .logo{
+    height: 80px;
+    margin-left: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 20px 20px; 
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;  
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #a2cbff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #a2cbff;
+    position: absolute;
+    right: 0;
+    top: -6px;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    transition: 0.5s all;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+    transition: 0.5s;
+}
+.header-text{
+    width: 50%;   
+    margin-top: 10%;
+    margin-left: 20%; 
+}
+
+.header-text .intro{
+    color: rgb(134, 251, 255); 
+    font-size: 30px; 
+    font-weight: 500; 
+    text-shadow: 2px 2px 10px cadetblue; 
+}
+
+.header-text h1{
+    font-size: 50px;  
+    font-weight: 400;
+}
+
+.home-text{
+    width: 80%;
+    font-size: 18px; 
+    font-weight: 200;
+}
+
+.header-text span{
+    font-weight: 700;
+    color:darkcyan;
+}
+
+.social-icons{
+    margin: 1rem;
+    position: absolute;
+    bottom: 15rem;   
+}
+
+.social-icons a{
+    text-decoration: none;
+}
+
+.social-icons i{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    color: white;
+    font-size: 2vw;
+    opacity: 0.7;
+}
+
+.social-icons .fa-instagram{
+    font-size : 2.2vw;
+}
+
+.social-icons i:hover{
+    opacity: 1.5;
+    transform: scale(1.1);
+}
+
+.fa-instagram:hover{
+    color: #E4405F;
+}
+
+.fa-github:hover{
+    color: #4183C4;
+}
+
+.fa-linkedin-in:hover{
+    color: #0A66C2;
+}
+
+.fa-discord:hover{
+    color: #5865F2;
+}
+
+/* ---------------------about--------------------------- */
+
+.about {
+    padding: 80px 0;
+    margin-left: 10%;
+    height: 100%;
+    width: 90%;
+}
+
+.about .my{
+    font-weight: 700;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row .about-col-1{
+    flex-basis: 35%;
+}
+
+.about .about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-radius:15px;
+    margin-top: 12%; 
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.about-col-2 p{
+    font-weight: 200; 
+    width: 90%;
+}
+
+.tab-title{
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.tab-title .tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{  
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ED2B2A;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-content ul li{
+    /* list-style: none; */
+    margin: 10px  0;
+}
+
+.tab-content ul li span{
+    color: #ff75f0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: flex;
+}
+
+/* ---------------------My Skills--------------------------- */
+
+.mySkills{
+    height: 100%;
+    width: 100%;
+}
+
+.mySkills .my{
+    font-weight: 700;
+    font-size: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.techSkills{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;  
+    width: 50%; 
+    height: 78vh;
+    text-align: center;
+}
+
+.professionalSkills{
+    width: 50%;
+    height: 78vh;
+    text-align: center;
+}
+
+.heading .head{
+    /* text-shadow: 2px 2px 16px white;   */
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+.con-skill{
+    margin-left: 15vw;
+}
+
+.skill-name{
+    font-size: 14px;
+    color: white;
+    font-weight: 200;
+    margin: 20px 0;
+    position: relative;
+    text-align: start;
+}
+
+.skill-bar{
+   height: 6px;
+   width: 60%;
+   background-color: whitesmoke;
+   border-radius: 10px; 
+}
+
+.skill-per{
+    height: 6px;
+    background-color:#ED2B2A;
+    border-radius: 15px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -25px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.radial-bar{
+   width: 50%;
+   height: 170px;
+   margin-bottom: 10px;
+   position: relative; 
+}
+
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: whitesmoke;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: #ED2B2A;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{animation:animate-path1 1s 1s linear forwards;}
+.path-2{animation:animate-path1 1s 1s linear forwards;}
+.path-3{animation:animate-path1 1s 1s linear forwards;}
+.path-4{animation:animate-path1 1s 1s linear forwards;}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.progress-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.radial-bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.radial-bar {
+    flex: 1 1 calc(50% - 20px); /* Two bars per line with some margin */
+    max-width: calc(50% - 20px); /* Set a maximum width */
+    margin: 10px; /* Margin between bars */
+    text-align: center; /* Center-align text within each radial bar */
+}
+
+.radial-bar svg {
+    width: 80%;
+    height: auto;
+}
+
+
+/* ------------------- My services------------------------ */
+.myServices{
+    height: 100%;
+    width: 100%;
+}
+
+.myServices .my{
+    font-weight: 700;
+    font-size: 80px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;  
+}
+
+.myServices .boxes{
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.myServices .box{ 
+    background-color: #AAD7D9;
+    margin: 150px 30px;
+    margin-bottom: 1.5vw;
+    padding: 2rem 0 0 3rem;
+    width: 350px;
+    border-radius: 0.75rem;
+    transition: background-color 0.5s transform 0.5s;
+}
+
+.box .logo{
+font-size: 2.2rem;
+font-weight: bolder;
+margin-bottom: 1rem;
+}
+
+.boxHead h3{
+    font-size: 2.25rem;
+    font-weight: 600; 
+}
+
+.boxText p{
+    margin: 2rem 0 2rem 0;
+    width: 270px;
+    font-weight: 200;
+}
+
+.box:hover{
+    background-color:#83B4FF;
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 20px #83B4FF;
+}
+
+/* ------------------- My projects------------------------ */
+.myProjects{
+    padding: 40px 0;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+.myProjects .my{
+    font-weight: 700;
+    font-size: 80px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;  
+}
+
+.workList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 10% 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.4), #3572EF);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    position: absolute;
+    left: 100px;
+    top: 30px; 
+    font-size: 2rem;  
+}
+
+.layer p{
+    width: 300px;
+    position: absolute;
+    left: 50px;
+    font-weight: 300;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+ 
+/* Scroll top button */
+
+.gotopbtn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 25%;
+    background-color: #000;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.gotopbtn i{
+    font-size: 1.5rem;
+    color: #95c5ff;
+    font-weight: 900;
+}
+
+.gotopbtn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px #000;
+}
+
+/* -----------------------------ContactME------------------------------------------ */
+.contactMe{
+    height: 70vh;
+    width: 100%;
+}
+
+.contact-left{
+    margin-top: -5%;
+    flex-basis: 35%;
+}
+
+.contact-right{
+    margin-top: -5%;
+    flex-basis: 60%;
+}
+
+.contact-left h1{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    margin-left: 20%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.contact-left p i{
+    margin-right: 15px;
+    color: #E4405F;
+}
+
+.contact-left .btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; 
+    margin-left: 15%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #E4405F;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-left a{
+    text-decoration: none;
+}
+
+.contact-left .btn:hover{
+    transform: scale(1.05);
+    background-color: #E4405F;
+    box-shadow: 2px 2px 2px #E4405F;
+}
+
+.contact-right{
+    width: 100%;
+    margin-right: 70px;
+}
+
+form input, form textarea{
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: #AAD7D9;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form ::placeholder{
+    color: black;
+}
+
+.contact-right .btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    background-color: transparent;
+    color: white;
+    border: 2px solid #E4405F;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-right .btn:hover{
+    transform: scale(1.05);
+    background-color: #E4405F;
+    box-shadow: 2px 2px 2px #E4405F;
+}
+
+.social-icons-2{
+    display: none;
+}
+
+.copyright{
+    color: black;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+    background-color: #AAD7D9;
+}
+
+.copyright p{
+    margin-top: -5px;
+}
+
+.popup{
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    border-radius: 6px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-Popup{
+    visibility: visible;
+    top: 535%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+ 
+.popup button{
+    width: 100%;
+    margin-top:50px ;
+    padding: 10px 0;
+    background-color: #6fd649;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------------------responsiveness--------------------------------- */
+nav .fa-xmark{
+    font-size: 25px;
+    display: none;
+}
+
+nav .fa-bars{ 
+    display: none;
+}
+
+@media (max-width: 1300px){
+    .contactMe{
+        height: fit-content;
+        position: relative;
+     } 
+
+     .contact-left{
+        flex-basis: 25%;
+    }
+    
+    .contact-right{
+        margin-top: 5%;
+        flex-basis: 55%;
+    }
+     .contact-left h1{
+        width: 120%;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6vw;
+        margin-left: 20%;
+    }
+    
+    .contact-left p{
+        margin-top: 30px;
+        margin-left: 20%;
+        cursor: pointer;
+    }
+
+    form input, form textarea{
+        width: 50%;
+        border: 0;
+        outline: none;
+        background: #AAD7D9;
+        padding: 15px;
+        margin-left: 40%;
+        color: black;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+
+    .contact-right .btn{
+        margin-left: 45%;
+        margin-bottom: 50px;
+    }
+
+    .copyright{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    html,body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color:#172737;
+    }
+
+    .header{
+        width: 100%;
+        height: fit-content;
+        background-image: url(Assests/me.png);
+        background-size: 50vw;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .header-text{
+        width: 70%;
+        margin-left: 5%;
+        margin-top: 20%;
+    }
+
+    .header-text .intro{
+        color: rgb(134, 251, 255); 
+        font-size: 4.5vw; 
+        width: 50%;
+        font-weight: 500; 
+        text-shadow: 2px 2px 10px cadetblue; 
+    }
+
+    nav{
+        width: 90%;
+    }
+
+    nav .logo{
+        height: 50px;
+    }
+
+    .header-text h1{
+        width: 100%;
+        font-size: 6vw;
+    }
+
+    .header-text p{
+        width: 100%;
+        margin-top: 15px;
+        font-size: 4vw;
+        font-weight: 250;
+    }
+
+    nav .fa-bars{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background-color: rgba(03, 03, 03, 0.8);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-xmark{
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .social-icons{
+        display: none;
+    }
+
+    nav ul{
+        background-color: rgba(03, 03, 03, 0.8);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    .about .my{
+        font-size: 12vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -20px;
+    }
+
+    .about .about-me{
+        height: 70vw;
+        width: 70vw;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .about .about-col-2{
+        flex-basis: 100%;
+        font-size: 3vw;  
+    }
+
+    .mySkills .text{
+        font-size: 12vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+
+    .techSkills{
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .heading .head{
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        font-size: 6vw;
+        font-weight: 200;
+        margin-bottom: 60px;
+    }
+
+    .techSkills .head{
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .professionalSkills .head{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        margin-top: 25%;  
+    }
+
+    .professionalSkills .text{
+        margin-bottom: 20px;
+        font-size: 3vw;
+    }
+
+        .radial-bars{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 20px;
+            gap: 100px; /* Gap between bars */
+        }  
+        
+        .radial-bar{
+            text-align: center;
+        }
+
+    .myServices .my{
+        width: 100%;
+        margin-top: 20%;
+        font-size: 12vw;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+    }
+
+    .myServices .box{
+        margin-bottom: -100px;
+        width: 72vw;
+        height: fit-content;
+    }
+    
+    .box .logo{
+    font-size: 5.2vw;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    }
+    
+    .boxHead h3{
+        font-size: 6vw;
+        font-weight: 600; 
+    }
+    
+    .boxText p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        font-size: 4vw;
+        font-weight: 200;
+    }
+
+    .myProjects{
+        margin-top: 25%;
+    }
+
+    .myProjects .my{
+        font-weight: 700;
+        font-size: 12vw;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    
+    .myProjects {
+        height: fit-content;
+    }
+
+    .myProjects p{
+        width: 60%;
+        left: 40px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .myProjects h3{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .contactMe{
+        height: fit-content;
+        position: relative;
+     } 
+
+     .contact-left .btn{
+        position: absolute;
+        left: 50px;
+     }
+
+     .contact-left h1{
+        width: 100%;
+        font-weight: 700;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        font-size: 12vw;
+        margin-left: 20%;
+    }
+    
+    .contact-left p{
+        margin-top: 30px;
+        margin-left: 20%;
+        cursor: pointer;
+    }
+
+    .contact-right{
+        margin-top: 30%;
+    }
+
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: #AAD7D9;
+        padding: 15px;
+        margin-left: 40%;
+        color: black;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+
+    .contact-right .btn{
+        margin-left: 45%;
+        margin-bottom: 50px;
+    }
+
+    .social-icons-2{
+        display: block;
+        margin: 1rem;
+        position: absolute;
+        bottom: 15rem;   
+    }
+    
+    .social-icons-2 a{
+        text-decoration: none;
+    }
+    
+    .social-icons-2 i{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        color: white;
+        font-size: 1.8rem;
+        opacity: 0.7;
+    }
+    
+    .social-icons-2 .fa-instagram{
+        font-size : 2rem;
+    }
+    
+    .social-icons-2 i:hover{
+        opacity: 1.5;
+        transform: scale(1.1);
+    }
+    
+    .fa-instagram:hover{
+        color: #E4405F;
+    }
+    
+    .fa-github:hover{
+        color: #4183C4;
+    }
+    
+    .fa-linkedin-in:hover{
+        color: #0A66C2;
+    }
+    
+    .fa-discord:hover{
+        color: #5865F2;
+    }
+
+    .copyright{
+        width: 100%;
+    }
+
+    .open-Popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+    
+}
+
+
+
+
+
+

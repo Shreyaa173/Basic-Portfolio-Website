@@ -1,0 +1,357 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Links -->
+
+    <!-- Logo -->
+    <link rel="icon" href="Assests/logo.png">
+
+    <!-- Style -->
+     <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- ----------------------------------------------------------Home------------------------------------------------------------------------------------- -->
+    <div class="main">
+    <div class="header">
+            <nav>
+               <img src="Assests/nameW.png" alt="my name" class="logo"> 
+               <ul id="sidemenu">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#myskills">Skills</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+               
+            </nav>
+            <div class="header-text" id="home">
+                <p class="intro"> Protégé </p>
+                <h1>Hi, I'm <span>Shreya Gupta</span>  from Delhi</h1>
+                <p class="home-text">Welcome to my portfolio. As a dedicated protégé in Computer Science, I strive to learn and grow continuously. This collection showcases my journey, highlighting key projects & skills developed under expert guidance. I invite you to explore my work and see my commitment to excellence and innovation.
+        </p>
+        </div>
+    
+    <div class="social-icons">
+        <a href="https://www.instagram.com/s_hreya173/"><i class="fa-brands fa-instagram" ></i></a>
+        <a href="https://github.com/Shreyaa173"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shreya-gupta-a783b9270/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://x.com/S_hreya17"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+</div>
+
+    <!-- -----------------------------------------------------about----------------------------------------------------------------------------------------- -->
+    <div class="about" id="about">
+        <h1 class="my">About Me</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assests/me-about.png" alt="my pic" class="about-me">
+                </div>
+                <div class="about-col-2">
+                    <p style="margin-top: 5%;">Hello! I'm Shreya, an upcoming second-year Computer Science student at IGDTUW. My passion for technology drives me to explore fields like artificial intelligence, cybersecurity, and software development. I enjoy solving complex problems and have developed proficiency in programming languages such as C and Java. Outside of academics, I am involved in various clubs and societies  like Optica IGDTUW as a event management team member(an astro society), Assetmerkle(a web3 & blockchain society) as a media team core. I am eager to contribute to innovative projects and continue expanding my knowledge in the dynamic world of computer science.</p>
+                    <br><br>
+    <div class="tab-title">
+        <!-- <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> -->
+        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+    </div>
+ <!-- -----------------------------------------------------skills----------------------------------------------------------------------------------------- -->
+<!-- <div class="tab-content active-tab" id="skills">
+    <ul>
+        <li><span>Web-Development</span><br>
+        Designing webpages</li>
+        <li><span>Ethical Hacking</span><br>
+            Securing your devices</li>
+            <li><span>DSA in Java</span><br>
+            Solving your Problems</li>
+    </ul>
+</div> -->
+ <!-- -----------------------------------------------------Education---------------------------------------------------------------------------------------- -->
+<div class="tab-content " id="education">
+    <ul>
+        <li><span>Pursuing Btech</span><br>
+        IGDTUW <br>
+        8.82 SGPA (1st sem)</li>
+        <li><span>Senior secondary school</span><br>
+            Sarvodaya kanya vidyalaya <br>
+            91.6%
+            </li>
+    </ul>
+    <ul>
+        <li style="margin-left: 60px;"><span>Secondary School</span><br>
+            Sarvodaya kanya vidyalaya <br>
+            91.6%</li>
+    </ul>
+</div>
+
+<!-- ------------------------------------------------------Experience--------------------------------------------------------------------------------------- -->
+<div class="tab-content active-tab" id="experience">
+    <ul>
+        <li><span>Web-Development Intern</span><br>
+        Bharat Intern</li>
+        <li><span>Java-Development Intern</span><br>
+            Code-Clause</li>
+        <li><span>Campus Ambassador</span><br>
+            My Gov India</li>
+    </ul>
+    <ul>
+        <li style="margin-left: 60px;"><span>Open Source Contributor</span><br>
+        GSSoC'24</li>
+    </ul>
+</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <a class= "gotopbtn" href= "#"><i class="fa-solid fa-chevron-up"></i></a>
+<!-- --------------------------------------------------------------My Skills-------------------------------------------------------------------------------- -->
+    <div class="mySkills" id="myskills">
+        <h1 class="my text"> My Skills </h1>
+        <div class="heading">
+            <div class="techSkills">
+                <p class="head">Technical Skills</p>
+            <div class="con-skill">
+                <div class="skill-name">
+                    <img src="Assests/webd.png" height="30px" alt="">
+                    <br>Frontend Development                    
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per = "60%" style="max-width: 60%"></div>
+                </div>
+            </div>
+            <div class="con-skill">
+                <div class="skill-name">
+                    <img src="Assests/C.png" height="50px"  alt="">
+                    <br>C </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per = "70%"style="max-width: 70%"></div>
+                </div>
+            </div>
+            <div class="con-skill">
+                <div class="skill-name">
+                    <img src="Assests/java.png" height="30px" alt="">
+                    <br>DSA</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per = "40%"style="max-width: 40%"></div>
+                </div>
+            </div>
+            <div class="con-skill">
+                <div class="skill-name">
+                    <img src="Assests/Ethical.png" height="30px" alt="">
+                    <br>Ethical Hacking</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per = "30%"style="max-width: 30%"></div>
+                </div>
+            </div>
+    
+            </div>
+            
+            <div class="professionalSkills">
+                <p class="head">Professional Skills</p>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg x = "0px" y = "0px" viewbox = "0 0 200 200">
+                        <circle class = "progress-bar" cx = "100" cy = "100" r = "80"></circle>
+                        <circle class = "path path-1" cx = "100" cy = "100" r = "80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x = "0px" y = "0px" viewbox = "0 0 200 200">
+                        <circle class = "progress-bar" cx = "100" cy = "100" r = "80"></circle>
+                        <circle class = "path path-2" cx = "100" cy = "100" r = "80"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x = "0px" y = "0px" viewbox = "0 0 200 200">
+                        <circle class = "progress-bar" cx = "100" cy = "100" r = "80"></circle>
+                        <circle class = "path path-3" cx = "100" cy = "100" r = "80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Teamwork</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x = "0px" y = "0px" viewbox = "0 0 200 200">
+                        <circle class = "progress-bar" cx = "100" cy = "100" r = "80"></circle>
+                        <circle class = "path path-4" cx = "100" cy = "100" r = "80"></circle>
+                        </svg>
+                        <div class="percentage">60%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                </div>                
+                </div>     
+        </div>
+    </div>    
+
+        <!--------------------------------------------------------------- My Services----------------------------------------------------------------------- -->
+        <div class="myServices" id="services">
+            <h1 class="my text">My Services </h1>
+            <div class="boxes">
+            <div class="box">
+                <div class="logo">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="boxHead"><h3>Web Designer</h3></div>
+                <div class="boxText"><p>I create beautiful, easy-to-use websites that work well on any device. From idea to launch, I make sure your site looks great, is simple to navigate, and helps you get noticed online. Let’s make your online presence shine</p></div>
+            </div>
+            <div class="box">
+                <div class="logo">
+                    <i class="fa-solid fa-user-secret"></i>
+                </div>
+                <div class="boxHead"><h3>Ethical Hacker</h3></div>
+                <div class="boxText"><p>As an ethical hacker, I identify and fix security vulnerabilities to protect your business. Using advanced techniques, I ensure your systems and data remain safe from threats. Let’s secure your digital assets!</p></div>
+            </div>
+            <div class="box">
+                <div class="logo">
+                    <i class="fa-solid fa-photo-film"></i>
+                </div>
+                <div class="boxHead" style="margin-left: -15px;"><h3>Graphic Designer</h3></div>
+                <div class="boxText"><p>As a designer, I specialize in crafting visually compelling and functional solutions. From logos to websites, I focus on delivering creative designs that resonate. Let's bring your vision to life with style and purpose!</p></div>
+            </div>
+        </div>   
+        </div>
+ <!--------------------------------------------------------------- My Projects------------------------------------------------------------------------------ -->
+    <div class="myProjects" id="projects">
+        <div class="container">
+            <h1 class="my">My Projects</h1>
+            <div class="workList">
+                <div class="work">
+                    <img src="Assests/portfolio.png" alt="" height="300px">
+                    <div class="layer">
+                        <h3 class="align">My Portfolio</h3>
+                        <p>Embark on my creative odyssey! Explore my projects, discover my skills, and learn about my creative journey on my new portfolio website.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assests/camera.png"alt="" height="300px">
+                    <div class="layer">
+                        <h3 class="side">Side Menu</h3>
+                        <p>Explore how I designed and implemented this user-friendly navigation solution using HTML and CSS. </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assests/spotify.png" alt="" class="spotify" height="300px">
+                    <div class="layer">
+                        <h3 class="align">Spotify-Clone</h3>
+                        <p>Explore my skills in frontend  development, and see my approach to creating a seamless music streaming  experience  using HTML and CSS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------Contact Mr------------------------------------------------------------------------------------ -->
+        <div class="contactMe" id="contact">
+            <div class="contact">
+              <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ms.shreya17@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 8375830142</p>
+                    <a href="https://drive.google.com/file/d/1epZa6b8lL5QJctDjZtNePBHUmEz4ESJT/view?usp=sharing"><button class="btn"> See Resume </button></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name = "Name" placeholder="Enter your name" required>
+                        <input type="email" name = "Email" placeholder="Enter your email id" required>
+                        <textarea name="Feedback" rows="6" placeholder="Please enter your Feedback"></textarea>
+                        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                        <div class="popup" id="popup">
+                            <img src="Assests/tick.png" alt="">
+                            <h2>Thank You!</h2>
+                            <p>Your feedback has been succesfully Submitted </p>
+                            <button type="button" onclick="window.location.reload();">Okay</button>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="social-icons-2">
+                    <a href="https://www.instagram.com/s_hreya173/"><i class="fa-brands fa-instagram" ></i></a>
+                    <a href="https://github.com/Shreyaa173"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shreya-gupta-a783b9270/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://x.com/S_hreya17"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+              </div> 
+            </div>
+        </div> 
+        </div>
+
+    <!-- -------------------------------------------------Scroll Up arrow---------------------------------------------------------------------------- -->
+    <div class="copyright">
+        <p>Copyright &#169; Shreya. Made with <i class="fa-solid fa-heart" style="color: red;"></i> </p>
+    </div>
+    <div class="scroll-prompt" scroll-prompt="" ng-show="showPrompt" style="opacity: 1;">
+        <div class="scroll-prompt-arrow-container">
+            <div class="scroll-prompt-arrow"><div></div></div>
+            <div class="scroll-prompt-arrow"><div></div></div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+<script src="script.js"></script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); 
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script>  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyfn-m9haxFdDbMu6Fl6LaIhwHkIxcuKepEOB1dHycPnLbIWwGavV-HxmVSEdTwq57f-w/exec';
+    const form = document.forms['submit-to-google-sheet']
+    
+    .addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {console.log('Success!', response)})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-Popup");
+    }
+  </script>
+</body>
+</html>
