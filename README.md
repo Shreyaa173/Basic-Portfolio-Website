@@ -1,10 +1,10 @@
-# Shreyaa's Portfolio
+# Shreya's Portfolio
 
 Welcome to my portfolio! Here you will find an overview of my projects, skills, and experiences in the world of technology and development.
 
 ## About Me
 
-Hello! I'm Shreyaa, a passionate developer with a keen interest in web development, blockchain technology, and software engineering. I thrive on solving complex problems and building innovative solutions that make a difference.
+Hello! I'm Shreya, a passionate developer with a keen interest in web development, blockchain technology, and software engineering. I thrive on solving complex problems and building innovative solutions that make a difference.
 
 ## Projects
 
